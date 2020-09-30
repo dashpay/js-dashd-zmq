@@ -1,0 +1,43 @@
+{
+  "name": "@dashevo/dashd-zmq",
+  "version": "1.0.0",
+  "description": "Dash Client Library to connect and subscribe to Dash Core (dashd)'s ZMQ topics",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "mocha 'lib/**/*.spec.js'",
+    "lint": "eslint .",
+    "check-package": "npm run check-package:name && npm run check-package:version",
+    "check-package:name": "test $(jq -r .name package.json) = $(jq -r .name package-lock.json)",
+    "check-package:version": "test $(jq -r .version package.json) = $(jq -r .version package-lock.json)"
+  },
+  "contributors": [{
+    "name": "Alex Werner",
+    "email": "alex@dash.org",
+    "url": "https://alex-werner.github.io/"
+  }],
+  "keywords": [
+    "dash",
+    "zmq"
+  ],
+  "dependencies": {
+    "@types/node": "^14.11.2",
+    "zeromq": "^6.0.0-beta.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashevo/js-dashd-zmq.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashevo/js-dashd-zmq/issues"
+  },
+  "homepage": "https://github.com/dashevo/js-dashd-zmq#readme"
+}

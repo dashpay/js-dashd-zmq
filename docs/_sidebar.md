@@ -1,0 +1,9 @@
+- Usage
+    - ZMQClient
+        - [`new ZMQClient()`](/usage/ZMQClient/ZMQClient.md)
+        - [`.close()`](/usage/ZMQClient/close.md)
+        - [`.connect()`](/usage/ZMQClient/connect.md)
+        - [`.disconnect()`](/usage/ZMQClient/disconnect.md)
+        - [`.subscribe()`](/usage/ZMQClient/subscribe.md)
+- [License](https://raw.githubusercontent.com/dashevo/js-dashd-zmq/master/LICENSE)
+- [Changelog](https://raw.githubusercontent.com/dashevo/js-dashd-zmq/master/CHANGELOG.md)

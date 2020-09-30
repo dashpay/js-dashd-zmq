@@ -1,0 +1,18 @@
+{
+  "hashblock": "hashblock",
+  "hashchainlock": "hashchainlock",
+  "hashtx": "hashtx",
+  "hashtxlock": "hashtxlock",
+  "hashgovernancevote": "hashgovernancevote",
+  "hashgovernanceobject": "hashgovernanceobject",
+  "hashinstantsenddoublespend": "hashinstantsenddoublespend",
+  "rawblock": "rawblock",
+  "rawchainlock": "rawchainlock",
+  "rawchainlocksig": "rawchainlocksig",
+  "rawtx": "rawtx",
+  "rawtxlock": "rawtxlock",
+  "rawtxlocksig": "rawtxlocksig",
+  "rawgovernancevote": "rawgovernancevote",
+  "rawgovernanceobject": "rawgovernanceobject",
+  "rawinstantsenddoublespend": "rawinstantsenddoublespend"
+}
