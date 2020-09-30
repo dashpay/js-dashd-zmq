@@ -1,6 +1,6 @@
 # Dashd ZMQ
 
-[![NPM Version](https://img.shields.io/npm/v/@dashevo/js-dashd-zmq)](https://www.npmjs.com/package/@dashevo/js-dashd-zmq)
+[![NPM Version](https://img.shields.io/npm/v/@dashevo/dashd-zmq)](https://www.npmjs.com/package/@dashevo/dashd-zmq)
 [![Build Status](https://img.shields.io/travis/com/dashevo/js-dashd-zmq)](https://travis-ci.com/dashevo/js-dashd-zmq)
 [![Release Date](https://img.shields.io/github/release-date/dashevo/js-dashd-zmq)](https://github.com/dashevo/js-dashd-zmq/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
