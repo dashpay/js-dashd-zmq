@@ -22,3 +22,23 @@ await client.connect();
 await client.subscribe(ZMQClient.TOPICS.hashblock);
 client.on(ZMQClient.TOPICS.hashblock, console.log);
 ```
+
+## Listenable topics
+
+-  hashblock
+-  hashchainlock
+-  hashchainlock
+-  hashtx
+-  hashtxlock
+-  hashgovernancevote
+-  hashgovernanceobject
+-  hashinstantsenddoublespend
+-  rawblock
+-  rawchainlock
+-  rawchainlocksig
+-  rawtx
+-  rawtxlock
+-  rawtxlocksig
+-  rawgovernancevote
+-  rawgovernanceobject
+-  rawinstantsenddoublespend

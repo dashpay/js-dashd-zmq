@@ -29,7 +29,7 @@ npm start
 
 ## Documentation
 
-You can see some [Examples here](/examples).
+You can see some [Examples here](https://dashevo.github.io/js-dashd-zmq/#/usage/examples).
 
 More [extensive documentation is available here](https://dashevo.github.io/js-dashd-zmq).
 
