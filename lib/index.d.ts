@@ -42,6 +42,11 @@ export default class ZMQClient extends EventEmitter {
          * Overrides default port (29998)
          */
         port?: string;
+
+        /**
+         * Overrides protocol, host and port from uri (tcp://0.0.0.0:29998)
+         */
+        uri?: string
     });
 
 
