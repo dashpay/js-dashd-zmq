@@ -63,10 +63,10 @@ export default class ZMQClient extends EventEmitter {
     /**
      * Create a new Subscriber socket and connect to it.
      *
-     * @param {ConnectionOptions} [socketOption]
+     * @param {SocketOptions<Subscriber>} [socketOptions]
      * @returns {Promise<Subscriber>}
      */
-    connect(socketOption?: ConnectionOptions): Promise<Subscriber>;
+    connect(socketOptions?: SocketOptions<Subscriber>): Promise<Subscriber>;
 
     /**
      * Disconnect socket from ZMQ.
