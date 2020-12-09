@@ -1,3 +1,10 @@
+# 1.1.0 (2020-12-08)
+
+### Features
+
+* implemented maxRetries
+* implemented uri options
+
 # 1.0.1 (2020-10-07)
 
 ### Features
