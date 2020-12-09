@@ -20,6 +20,11 @@ interface TopicsTypeMap {
     rawinstantsenddoublespend: 'rawinstantsenddoublespend';
 }
 
+export interface ClientConnectionOptions {
+  maxRetries?: number,
+  socketOptions: SocketOptions<Subscriber>
+}
+
 /**
  * @class ZMQClient
  */
@@ -59,10 +64,10 @@ export default class ZMQClient extends EventEmitter {
     /**
      * Create a new Subscriber socket and connect to it.
      *
-     * @param {SocketOptions<Subscriber>} [socketOption]
+     * @param {ClientConnectionOptions} [connectionOptions]
      * @returns {Promise<Subscriber>}
      */
-    connect(socketOption?: SocketOptions<Subscriber>): Promise<Subscriber>;
+    connect(connectionOptions?: ClientConnectionOptions): Promise<Subscriber>;
 
     /**
      * Disconnect socket from ZMQ.
