@@ -1,6 +1,6 @@
 {
   "name": "@dashevo/dashd-zmq",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Dash Client Library to connect and subscribe to Dash Core (dashd)'s ZMQ topics",
   "main": "lib/index.js",
   "scripts": {
@@ -11,11 +11,13 @@
     "check-package:name": "test $(jq -r .name package.json) = $(jq -r .name package-lock.json)",
     "check-package:version": "test $(jq -r .version package.json) = $(jq -r .version package-lock.json)"
   },
-  "contributors": [{
-    "name": "Alex Werner",
-    "email": "alex@dash.org",
-    "url": "https://alex-werner.github.io/"
-  }],
+  "contributors": [
+    {
+      "name": "Alex Werner",
+      "email": "alex@dash.org",
+      "url": "https://alex-werner.github.io/"
+    }
+  ],
   "keywords": [
     "dash",
     "zmq"
