@@ -32,11 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/js-dashd-zmq.git"
+    "url": "git+https://github.com/dashpay/js-dashd-zmq.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/js-dashd-zmq/issues"
+    "url": "https://github.com/dashpay/js-dashd-zmq/issues"
   },
-  "homepage": "https://github.com/dashevo/js-dashd-zmq#readme"
+  "homepage": "https://github.com/dashpay/js-dashd-zmq#readme"
 }
