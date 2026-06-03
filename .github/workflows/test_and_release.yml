@@ -13,17 +13,17 @@ on:
 jobs:
   test:
     name: Run Dashd ZMQ tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v6.4.0
         with:
-          node-version: '16'
+          node-version: '24'
 
       - name: Enable NPM cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: '~/.npm'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -44,23 +44,23 @@ jobs:
 
   release:
     name: Release NPM package
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs: test
     if: ${{ github.event_name == 'release' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v6.4.0
         with:
-          node-version: '16'
+          node-version: '24'
 
       - name: Check package version matches tag
-        uses: geritol/match-tag-to-package-version@0.1.0
+        uses: geritol/match-tag-to-package-version@0.2.0
         env:
           TAG_PREFIX: refs/tags/v
 
       - name: Enable NPM cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: '~/.npm'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -71,7 +71,7 @@ jobs:
         run: npm ci
 
       - name: Set release tag
-        uses: actions/github-script@v3
+        uses: actions/github-script@v9
         id: tag
         with:
           result-encoding: string
@@ -81,7 +81,7 @@ jobs:
             return (tag.includes('dev') ? `${major}.${minor}-dev` : 'latest');
 
       - name: Publish NPM package
-        uses: JS-DevTools/npm-publish@v1
+        uses: JS-DevTools/npm-publish@v4
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: ${{ steps.tag.outputs.result }}
